@@ -1,0 +1,20 @@
+package top.lllyl2012
+
+rule "discount 7"
+    when
+        Person(identity == "gold");
+    then
+        System.out.println("7折");
+     end
+rule "discount 8"
+    when
+        Person(identity == "silver");
+    then
+        System.out.println("8折");
+     end
+rule "discount 9"
+     when
+         Person(identity == "copper");
+    then
+         System.out.println("9折");
+end

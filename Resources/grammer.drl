@@ -1,0 +1,9 @@
+package top.lllyl2012
+
+rule "discount 11"
+when
+    $m:Person(count > 100)
+then
+    $m.sub();
+    update($m)
+ end

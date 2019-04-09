@@ -1,0 +1,12 @@
+package top.lllyl2012
+
+function void print(Person person){
+    System.out.println("haahahahah:" + person.getIdentity());
+}
+
+rule "function 1"
+when
+    $m: Person(identity == "copper");
+then
+    print($m);
+ end

@@ -1,0 +1,19 @@
+package top.lllyl2012
+
+//用了activation-group 当两个条件都满足时，就只执行优先级高的那个
+rule "activation test 2"
+activation-group "haha"
+when
+    Person(count > 100)
+then
+    System.out.println(111);
+ end
+
+ rule "activation test 3"
+ activation-group "haha"
+ salience 10
+ when
+    Person(count > 120)
+ then
+    System.out.println(2222);
+  end
